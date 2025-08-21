@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FreshCart - Your local kirana store for fresh groceries, staples, and daily essentials. Order online for fast delivery.">
+    <meta name="keywords" content="kirana, grocery, online shopping, fresh vegetables, staples, local store">
+    
+    <title>FreshCart - Your Neighborhood Kirana Store</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#"><h1>FreshCart 🛒</h1></a>
+            </div>
+            <div class="nav-search">
+                <input type="search" id="search-bar" placeholder="Search for over 1,000 products...">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#products">Shop All</a></li>
+                <li><a href="#deals">Today's Deals</a></li>
+                <li><a href="#" id="customer-records-btn" class="nav-button">My Records</a></li>
+                <li><a href="#" id="cart-btn" class="nav-button">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#" id="login-btn" class="login-button">Admin Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Quality Groceries, Right at Your Doorstep</h2>
+                <p>Your one-stop shop for all daily needs. Fresh, reliable, and always on time.</p>
+                <a href="#products" class="cta-button">Explore All Products 👇</a>
+            </div>
+        </section>
+
+        <section id="deals" class="deals-section">
+            <h2 class="section-title">🔥 Hot Deals of the Day 🔥</h2>
+            <div class="product-grid">
+                <div class="product-card sale">
+                    <div class="sale-badge">15% OFF</div>
+                    <img src="" alt="Sunflower Oil">
+                    <h3>Sunflower Oil</h3>
+                    <p class="product-description">Light and healthy cooking oil, perfect for all your dishes.</p>
+                    <p class="product-price"><span class="original-price">₹150.00</span> ₹127.50</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card sale">
+                    <div class="sale-badge">10% OFF</div>
+                    <img src="" alt="Aashirvaad Atta">
+                    <h3>Aashirvaad Atta</h3>
+                    <p class="product-description">Whole wheat atta for soft and fluffy rotis every time.</p>
+                    <p class="product-price"><span class="original-price">₹350.00</span> ₹315.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                 <div class="product-card sale">
+                    <div class="sale-badge">20% OFF</div>
+                    <img src="[attachment_18](attachment)" alt="Colgate Toothpaste">
+                    <h3>Colgate Toothpaste</h3>
+                    <p class="product-description">Complete oral care for strong teeth and healthy gums.</p>
+                    <p class="product-price"><span class="original-price">₹90.00</span> ₹72.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <h2 class="section-title">Our Full Range of Products</h2>
+
+            <h3>Grains & Staples</h3>
+            <div class="product-grid">
+                <div class="product-card"><img src="[attachment_0](attachment)" alt="Basmati Rice"><div class="product-info"><h3>Basmati Rice</h3><p class="product-price">₹120.00</p><div class="product-options"><label for="weight-1">Weight:</label><select name="weight" id="weight-1"><option value="1kg">1 kg</option><option value="5kg">5 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_2](attachment)" alt="Toor Dal"><div class="product-info"><h3>Toor Dal</h3><p class="product-price">₹95.00</p><div class="product-options"><label for="weight-2">Weight:</label><select name="weight" id="weight-2"><option value="500g">500 g</option><option value="1kg">1 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_8](attachment)" alt="Moong Dal"><div class="product-info"><h3>Moong Dal</h3><p class="product-price">₹110.00</p><div class="product-options"><label for="weight-13">Weight:</label><select name="weight" id="weight-13"><option value="500g">500 g</option><option value="1kg">1 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_13](attachment)" alt="Chickpeas"><div class="product-info"><h3>Chickpeas (Chana)</h3><p class="product-price">₹80.00</p><div class="product-options"><label for="weight-14">Weight:</label><select name="weight" id="weight-14"><option value="500g">500 g</option><option value="1kg">1 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_5](attachment)" alt="Sugar"><div class="product-info"><h3>Sugar</h3><p class="product-price">₹45.00</p><div class="product-options"><label for="weight-6">Weight:</label><select name="weight" id="weight-6"><option value="1kg">1 kg</option><option value="5kg">5 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_4](attachment)" alt="Tata Salt"><div class="product-info"><h3>Tata Salt</h3><p class="product-price">₹25.00</p><div class="product-options"><label for="weight-5">Weight:</label><select name="weight" id="weight-5"><option value="1kg">1 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            </div>
+
+            <h3>Spices & Oils</h3>
+            <div class="product-grid">
+                <div class="product-card"><img src="[attachment_1](attachment)" alt="Turmeric Powder"><div class="product-info"><h3>Turmeric Powder</h3><p class="product-price">₹50.00</p><div class="product-options"><label for="weight-7">Weight:</label><select name="weight" id="weight-7"><option value="100g">100g</option><option value="200g">200g</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_3](attachment)" alt="Chilli Powder"><div class="product-info"><h3>Red Chilli Powder</h3><p class="product-price">₹60.00</p><div class="product-options"><label for="weight-8">Weight:</label><select name="weight" id="weight-8"><option value="100g">100g</option><option value="200g">200g</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_12](attachment)" alt="Coriander Powder"><div class="product-info"><h3>Coriander Powder</h3><p class="product-price">₹45.00</p><div class="product-options"><label for="weight-15">Weight:</label><select name="weight" id="weight-15"><option value="100g">100g</option><option value="200g">200g</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_9](attachment)" alt="Garam Masala"><div class="product-info"><h3>Garam Masala</h3><p class="product-price">₹75.00</p><div class="product-options"><label for="weight-16">Weight:</label><select name="weight" id="weight-16"><option value="50g">50g</option><option value="100g">100g</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_14](attachment)" alt="Ginger Garlic Paste"><div class="product-info"><h3>Ginger Garlic Paste</h3><p class="product-price">₹40.00</p><div class="product-options"><label for="weight-17">Weight:</label><select name="weight" id="weight-17"><option value="200g">200g</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            </div>
+
+            <h3>Fresh Produce</h3>
+            <div class="product-grid">
+                <div class="product-card"><img src="[attachment_10](attachment)" alt="Onions"><div class="product-info"><h3>Onions</h3><p class="product-price">₹30.00 / kg</p><div class="product-options"><label for="weight-10">Weight:</label><select name="weight" id="weight-10"><option value="1kg">1 kg</option><option value="2kg">2 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_7](attachment)" alt="Potatoes"><div class="product-info"><h3>Potatoes</h3><p class="product-price">₹40.00 / kg</p><div class="product-options"><label for="weight-11">Weight:</label><select name="weight" id="weight-11"><option value="1kg">1 kg</option><option value="2kg">2 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_11](attachment)" alt="Tomatoes"><div class="product-info"><h3>Tomatoes</h3><p class="product-price">₹25.00 / kg</p><div class="product-options"><label for="weight-12">Weight:</label><select name="weight" id="weight-12"><option value="1kg">1 kg</option><option value="2kg">2 kg</option></select></div><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            </div>
+
+            <h3>Snacks & Beverages</h3>
+            <div class="product-grid">
+                <div class="product-card"><img src="[attachment_6](attachment)" alt="Parle-G"><div class="product-info"><h3>Parle-G Biscuits</h3><p class="product-price">₹10.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_15](attachment)" alt="Maggi Noodles"><div class="product-info"><h3>Maggi Noodles</h3><p class="product-price">₹14.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_19](attachment)" alt="Lays Chips"><div class="product-info"><h3>Lays Potato Chips</h3><p class="product-price">₹20.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="[attachment_16](attachment)" alt="Coca-Cola"><div class="product-info"><h3>Coca-Cola</h3><p class="product-price">₹40.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            </div>
+            
+            <h3>Dairy & Bakery</h3>
+            <div class="product-grid">
+                <div class="product-card"><img src="" alt="Amul Butter"><div class="product-info"><h3>Amul Butter</h3><p class="product-price">₹55.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="" alt="Britannia Bread"><div class="product-info"><h3>Britannia Bread</h3><p class="product-price">₹45.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            </div>
+
+            <h3>Personal & Home Care</h3>
+            <div class="product-grid">
+                <div class="product-card"><img src="[attachment_17](attachment)" alt="Lifebuoy Soap"><div class="product-info"><h3>Lifebuoy Soap</h3><p class="product-price">₹30.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+                <div class="product-card"><img src="" alt="Surf Excel"><div class="product-info"><h3>Surf Excel Powder</h3><p class="product-price">₹120.00</p><button class="add-to-cart-btn">Add to Cart</button></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>About FreshCart</h4>
+                <p>We are your trusted neighborhood kirana, committed to bringing you the freshest and highest quality groceries with a smile.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p>📍 123 Kirana Lane, Main Market</p>
+                <p>📞 (123) 456-7890</p>
+                <p>📧 support@freshcart.com</p>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">Facebook</a> | <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FreshCart Kirana Shop. All Rights Reserved. Built with ❤️.</p>
+        </div>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Admin Login Portal</h2>
+            <p>Login to manage products and prices.</p>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="cta-button">Secure Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content large">
+            <span class="close-btn">&times;</span>
+            <h2>Your Shopping Bill</h2>
+            <div id="cart-items">
+                <p>Your cart is currently empty. Start shopping to add items!</p>
+            </div>
+            <hr>
+            <div class="bill-summary">
+                <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+                <p>Taxes (5%): <span id="taxes">₹0.00</span></p>
+                <h4>Total Amount: <span id="total-bill">₹0.00</span></h4>
+            </div>
+            <button id="generate-bill-btn" class="cta-button">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+      
